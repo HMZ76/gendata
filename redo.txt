@@ -1,0 +1,13 @@
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731052423138-Scene-002.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731206971220-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731207122636-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731208725118-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731207540750-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731206971220-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731207122636-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731207417785-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731207631937-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731207540750-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731208116680-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731208502769-Scene-001.mp4
+/home/nas01/szj/dataset/cog/protrait_1119/Camera_xhs_1731208116680-Scene-001.mp4
