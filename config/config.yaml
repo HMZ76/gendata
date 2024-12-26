@@ -1,0 +1,59 @@
+num_gpus: 1 # GPU数量，也意味着并行进程数量
+#input: "/home/nas01/wangqiteng/data/VidGen/Fudan-FUXI/video_clip_2/vidgen" #输入路径，可以是包含多个mp4文件夹的路径、单个mp4的路径、包含多个mp4绝对路径的txt文件的路径
+#output: "/home/nas01/CVG_WH_VIDEO_DATASET/vidgen" # 输出路径，若该路径不存在，则自动创建
+#log_dir: "/home/nas01/CVG_WH_VIDEO_DATASET/vidgen"
+
+#input: "caption_again.txt"
+#output: "/home/nas01/CVG_WH_VIDEO_DATASET/vidgen_person1"
+#log_dir: "/home/nas01/CVG_WH_VIDEO_DATASET/vidgen_person1"
+
+input: "/home/nas01/CVG_WH_VIDEO_DATASET/cartoon1211/video"
+output: "/home/nas01/CVG_WH_VIDEO_DATASET/cartoon1224"
+log_dir: "/home/nas01/CVG_WH_VIDEO_DATASET/cartoon1224"
+
+
+
+save_annotation: True # 是否保存标注文件
+startIndex: 0 # 开始索引
+is_replace: False # 替换模式，True：覆盖，False：追加
+
+quality_detect: # 质量评估（清晰度）
+    implement: True # 开启
+    width: 680
+    height: 600
+    fps: 15
+    duration: 4 # 最小持续时间，以毫微妙（纳
+
+video_scene_detect: # 视频场景检测项目配置
+    implement: False
+    clip_duration: [8, 10] # 如果原视频中未检测到场景变换，则将原视频随机截取为clip_duration区间内时长的多段视频
+    duration_thres: 4 # 视频时长阈值，单位为秒，切分后的视频时长若小于该阈值，则丢弃该视频，不会做后续处理
+
+ocr: # 文字识别项目配置
+    implement: False #是否使用
+    detail: True # 文字识别详情，True表示详细信息，False表示详细信息
+    threshold: 0.1
+
+video_evaluate: # 视频评价项目配置
+    implement: False # 是否使用
+    threshold: 0.35 # 置信度过滤，低于此置信度的结果将被过滤
+    opt: "video_evaluate/DOVER/evaluate.yml" # 视频评价配置文件路径
+
+optical_flow: # 光流项目配置
+    implement: False # 是否使用
+    threshold: 0 # 视频帧间光流变化阈值，大于该阈值则认为该视频为运动视频
+    up_bound: 5
+    low_bound: 0
+
+classification: #分类
+    implement: False
+    num_classes: 12
+    img_size: 480
+
+caption_annotation: # 字幕生成
+    implement: True
+    caption_method: "qwen2"
+    enable_en: True
+    enable_zh: False
+    model_path: /home/nas01/wangqiteng/model/qwen/Qwen2-VL-7B-Instruct #/home/nas01/xiongwenbo/cogvlm2-llama3-caption
+    llm_model_path: /home/nas01/wangqiteng/model/qwen/Qwen2.5-7B-Instruct

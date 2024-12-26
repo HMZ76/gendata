@@ -1,0 +1,78 @@
+/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/torchvision/transforms/_functional_video.py:6: UserWarning: The 'torchvision.transforms._functional_video' module is deprecated since 0.12 and will be removed in the future. Please use the 'torchvision.transforms.functional' module instead.
+  warnings.warn(
+/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/torchvision/transforms/_transforms_video.py:22: UserWarning: The 'torchvision.transforms._transforms_video' module is deprecated since 0.12 and will be removed in the future. Please use the 'torchvision.transforms' module instead.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:02<00:11,  2.40s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:04<00:09,  2.49s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:07<00:07,  2.57s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:10<00:05,  2.77s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:12<00:02,  2.42s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:12<00:00,  1.76s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:12<00:00,  2.16s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.73s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.09s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.53it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  2.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.52it/s]
+Some parameters are on the meta device because they were offloaded to the cpu.
+/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.1` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.1` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:589: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `1` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+1.mp4
+A red car drives down a straight road through a desert, heading towards a radiant, hazy sun that casts a warm glow over the landscape. The scene is set against a backdrop of towering cliffs and sparse vegetation, with power lines marking the path. As the car continues, the sky transitions from yellow to purple, suggesting either dawn or dusk. The car's journey is solitary, with no other vehicles or people in sight, emphasizing a sense of adventure and nostalgia. The artwork, reminiscent of retro-futuristic illustrations, uses a vibrant color palette to evoke feelings of wonder and nostalgia.
+3.mp4
+ A young boy stands on a grassy knoll, arms outstretched towards a fleet of paper airplanes soaring in the sky at sunset. The scene is set against a backdrop of warm hues, with the boy's silhouette highlighted against the vibrant orange and yellow sky. As time passes, the boy remains on the knoll, his posture and the positioning of his hand suggesting a moment of wonder and the beginning of an adventure. The airplanes, varying in size and design, add to the whimsical atmosphere. The boy's expression of wonder and the serene sky evoke feelings of childhood dreams and the boundless possibilities of imagination.
+2.mp4
+A young woman in a purple nightgown sits on a windowsill, gazing out at a rainy cityscape. A black cat with a yellow collar sits beside her, sharing the quiet moment. The room is dimly lit, with a candle and a glass of water on a table, creating a cozy atmosphere. As time passes, the scene remains consistent, with the woman and cat enjoying the tranquility of the evening. The city lights twinkle below, and the rain continues to fall, enhancing the serene mood. The woman's contemplative expression and the cat's relaxed posture suggest a moment of peaceful reflection.
+4.mp4
+ The video features an animated character, likely from the 'One Piece' series, in a dynamic pose with a muscular torso, dark hair, and a tattoo on his left arm. He is wearing a red beaded necklace and is surrounded by orange and yellow flames, suggesting a powerful moment of action. His expression is one of intense focus or aggression, and his posture indicates he is ready for combat. The character's appearance is consistent throughout the video, with the only notable change being the tattoo on his arm, which is marked with an 'A' and later an 'A8' symbol.
+Traceback (most recent call last):
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 1764, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/modeling_utils.py", line 58, in <module>
+    from .quantizers import AutoHfQuantizer, HfQuantizer
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/quantizers/__init__.py", line 14, in <module>
+    from .auto import AutoHfQuantizer, AutoQuantizationConfig
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/quantizers/auto.py", line 42, in <module>
+    from .quantizer_torchao import TorchAoHfQuantizer
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/quantizers/quantizer_torchao.py", line 35, in <module>
+    from torchao.quantization import quantize_
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/torchao/__init__.py", line 31, in <module>
+    from torchao.quantization import (
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/torchao/quantization/__init__.py", line 7, in <module>
+    from .smoothquant import *  # noqa: F403
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/torchao/quantization/smoothquant.py", line 18, in <module>
+    from .utils import (
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/torchao/quantization/utils.py", line 13, in <module>
+    from torchao.quantization.quant_primitives import (
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/torchao/quantization/quant_primitives.py", line 73, in <module>
+    torch.float8_e4m3fnuz,
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/torch/__init__.py", line 1833, in __getattr__
+    raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
+AttributeError: module 'torch' has no attribute 'float8_e4m3fnuz'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nas01/wangqiteng/data/LanguageBind/Open-Sora-Plan-v1.1.0/gendata/caption_annotation/cog_llama8B.py", line 133, in <module>
+    runner = CaptionAnnotationVideo()
+  File "/home/nas01/wangqiteng/data/LanguageBind/Open-Sora-Plan-v1.1.0/gendata/caption_annotation/cog_llama8B.py", line 18, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=TORCH_TYPE, device_map="auto", trust_remote_code=True)
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 553, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 552, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/dynamic_module_utils.py", line 249, in get_class_in_module
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/work/.cache/huggingface/modules/transformers_modules/cogvlm2-llama3-caption/modeling_cogvlm.py", line 11, in <module>
+    from transformers import PreTrainedModel, PreTrainedTokenizer
+  File "<frozen importlib._bootstrap>", line 1075, in _handle_fromlist
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 1754, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "/home/work/data/miniforge3/envs/hmz/lib/python3.10/site-packages/transformers/utils/import_utils.py", line 1766, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import transformers.modeling_utils because of the following error (look up to see its traceback):
+module 'torch' has no attribute 'float8_e4m3fnuz'
